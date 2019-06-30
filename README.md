@@ -1,5 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Purpose
+
+This project is the capstone project for the 'Create Web Applications with React' Codecademy Pro Intensive. Using React and the Spotify API, users can create new playlists and add and remove songs.
+
 ## Available Scripts
 
 In the project directory, you can run:

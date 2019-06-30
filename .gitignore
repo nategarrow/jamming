@@ -18,6 +18,10 @@
 .env.test.local
 .env.production.local
 
+# web-api-auth-examples
+/web-api-auth-examples
+
+
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
