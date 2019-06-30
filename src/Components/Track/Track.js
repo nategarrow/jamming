@@ -6,11 +6,11 @@ export class Track extends React.Component {
   render() {
     return (
       <div className="Track">
-        <div className="Track-information">
-          <h3>{this.props.song.name}</h3>
-          <p>{this.props.song.band} | {this.props.song.album}</p>
+        <div class="Track-information">
+          <h3>Tiny Dancer</h3>
+          <p>Elton John | Madman Across The Water</p>
         </div>
-        <a className="Track-action" href={this.props.song.link} target="_blank">Link</a>
+        <a class="Track-action">+</a>
       </div>
     );
   }
