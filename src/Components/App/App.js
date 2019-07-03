@@ -11,6 +11,7 @@ class App extends React.Component {
     this.state = {
       searchResults: [],
       playlistTracks: [],
+      playlistName: 'New Playlist'
     };
 
     // Bind new methods
@@ -46,8 +47,12 @@ class App extends React.Component {
     if(this.state.playlistTracks.length && this.state.playlistName) {
       let trackURIs = tracks.map(track=>track.uri);
       Spotify.savePlaylist(name, trackURIs);
-      this.setState({playlistName: 'New Playlist',playlistTracks: []})
-    }
+      this.setState({
+        playlistName: 'New Playlist',
+        playlistTracks: []
+      });
+    document.getElementById("playlist-name").value = 'New Playlist';    
+  }
   }
 
   search(term) {
