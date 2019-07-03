@@ -12,18 +12,18 @@ class App extends React.Component {
         name: 'Here With Me',
         album: 'CHVRCHES',
         artist: 'Love is Dead',
-        id: '1'
+        id: 'sadfasd1'
       },{
         name: 'Wonderland',
         album: 'Love is Dead',
         artist: 'CHVRCHES',
-        id: '2'
+        id: '2wefsd'
       }],
       playlistTracks: [{
         name: 'song 1',
         artist: 'artist 1',
         album: 'album 1',
-        id:'1'
+        id:'5asdf'
       }]
     };
 
@@ -41,6 +41,7 @@ class App extends React.Component {
   }
 
   removeTrack(track) {
+    console.log('Running Removal');
     let savedTracks = this.state.playlistTracks;
     let newTracks = savedTracks.filter(savedTrack => savedTrack.id !== track.id);
     this.setState({playlistTracks: newTracks});

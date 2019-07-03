@@ -3,7 +3,7 @@ import './Track.css';
 
 export class Track extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.addTrack = this.addTrack.bind(this);
     this.removeTrack = this.removeTrack.bind(this);
   }
@@ -17,10 +17,14 @@ export class Track extends React.Component {
   }
 
   renderAction() {
-    if (this.props.isRemoval) {
-      return <button className="Track-action" onClick={this.removeTrack}>-</button>
+    console.log(this.props);
+    console.log("Removal Status: "+this.props.isRemoval);
+    if (!this.props.isRemoval) {
+      console.log('Found SearchList Track');
+      return <button className="Track-action" onClick={this.addTrack}>+</button>;
     }
-    return <button className="Track-action" onClick={this.addTrack}>+</button>;
+    console.log('Found Playlist Track');
+    return <button className="Track-action" onClick={this.removeTrack}>-</button>
   }
 
   render() {
