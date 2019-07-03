@@ -4,7 +4,7 @@ import './TrackList.css';
 
 export class TrackList extends React.Component {
   render() {
-    // console.log(this.props.tracks);
+    // sort tracks from SearchResults and Playlist
     if(!this.props.isRemoval) {
       return (
         <div className="TrackList">

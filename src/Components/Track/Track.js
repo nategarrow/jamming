@@ -17,13 +17,9 @@ export class Track extends React.Component {
   }
 
   renderAction() {
-    console.log(this.props);
-    console.log("Removal Status: "+this.props.isRemoval);
     if (!this.props.isRemoval) {
-      console.log('Found SearchList Track');
       return <button className="Track-action" onClick={this.addTrack}>+</button>;
     }
-    console.log('Found Playlist Track');
     return <button className="Track-action" onClick={this.removeTrack}>-</button>
   }
 
