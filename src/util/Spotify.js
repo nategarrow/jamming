@@ -2,7 +2,7 @@
 
 let accessToken;
 let clientId = 'f0f1235359a74490a0527dc3367a5f23'; // Spotify Client ID
-const redirectUri = 'http://nathangarrow/jamming/build/index'; // Return to portfolio site
+const redirectUri = 'https://garrownt17.github.io/jamming/build/'; // Return to portfolio site
 
 const Spotify = {
   getAccessToken() {
