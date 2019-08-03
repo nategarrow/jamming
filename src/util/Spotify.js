@@ -2,7 +2,7 @@
 
 let accessToken;
 let clientId = 'f0f1235359a74490a0527dc3367a5f23'; // Spotify Client ID
-const redirectUri = 'http://localhost:3000/'; // Return to localhost site
+const redirectUri = 'http://nathangarrow/jamming/build/index'; // Return to portfolio site
 
 const Spotify = {
   getAccessToken() {
